@@ -1,5 +1,31 @@
 import 'package:flutter/material.dart';
 
+
+/* Diferença entre Stateful e Stateless
+ *
+ * Stateless: Widget que não tem estado, ou seja, não muda de acordo com a interação do usuário
+ * Ex: um texto, uma imagem e outras coisas que não pode alterar o status;
+ * Stateful: Widget que tem estado, ou seja, muda de acordo com a interação do usuário
+ * Ex: um botão quando clicado muda de cor;
+ * */
+
+/* Descrição dos Widgets utilizados comparando com HTML
+*
+* Contaner: Widget que cria um container para outros widgets, ele pode ser usado para criar uma estrutura de layout e funciona como uma Div do HTML;
+* Center: Widget que centraliza os widgets filhos;
+* Column: Widget que cria uma coluna de widgets, funciona como uma Div com Display: flex;
+* Text: Widget que cria um texto, funciona como um h1, h2, h3, p, span, etc;
+* Circle Avatar: Widget que cria um avatar circular, funciona para deixar um ícone ou uma imagem redonda. Obs: pode ser utilizado um Container com borda redonda também;
+* SizedBox: Widget geralmente utilizado para criar espaço entre os widgets, ele funciona semelhante a um container mas não contém as opções de costumização;
+* Padding: Widget que cria um espaço entre o widget e o seu conteúdo, funciona como um padding do CSS;
+* TextField: Widget que cria um campo de texto, funciona como um input do HTML;
+* TextButton: Widget que cria um botão, funciona como um a ou button do HTML;
+* AlertDialog: Widget que cria uma caixa de diálogo, funciona como um alert do JS;
+* TextStyle: Widget que cria um estilo de texto, funciona como um style do CSS;
+* Navigator: Widget que cria uma navegação entre as telas, funciona como um href do HTML;
+* Appbar: Widget que cria uma barra que fica no topo da aplicação, ela pode conter um título, um ícone e um botão de ação, como um navbar do Bootstrap;
+*/
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -8,6 +34,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+
+  //TextEditinController é uma classe que controla o estado e o valor de um TextInput
   TextEditingController EmailController= TextEditingController();
   TextEditingController Password= TextEditingController();
 
@@ -67,6 +95,9 @@ class _LoginPageState extends State<LoginPage> {
                   Navigator.pushReplacementNamed(context, "/home");
                 }
                 else{
+                  //showDialog é um método que cria uma caixa de diálogo na tela, ele recebe como parâmetro um context e um builder
+                  //o contexto de uma aplicação é basicamente as inforções da tela atual, como por exemplo, o tamanho da tela, a cor de fundo, etc.
+                  //Você pode pegar esses dados através de um MediaQuery.of(context).size.width, por exemplo.
                   showDialog(
                       context: context,
                       builder: (context) => alert("Login Falhou"));
