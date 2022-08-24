@@ -1,16 +1,15 @@
-# test_flutter
+# Tela de Login básica
 
-A new Flutter project.
+Um projeto desenvolvido para demonstrar a facilidade de criação de uma tela no flutter.
 
-## Getting Started
+## Como eu devo instalar o Flutter no meu computador?
 
-This project is a starting point for a Flutter application.
+Isso é simples, no site [oficial do flutter](https://docs.flutter.dev/get-started/install) há um tutorial de como fazer a instalação em cada uma das plataformas disponíveis
 
-A few resources to get you started if this is your first Flutter project:
+## Como eu consigo fazer o build da minha aplicação para meu smartphone? 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Caso seu celular seja android, é possível através de uma ferramenta chamada [ADB(Android Debbug Bride)](https://developer.android.com/studio/command-line/adb), ele faz uma conexão do seu celular com o seu computador tanto através de cabo quanto do wifi;
+- Caso seja um Iphone, é necessário que faça a conexão através do Xcode da apple, nesse [blog](https://blog.cod3r.com.br/executando-seu-projeto-flutter-no-seu-dispositivo-ios/) há um passo a passo de como realizar essa instalação
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## É isso!
+Fico disponível para tirar dúvidas e responder questões sobre o projeto!
