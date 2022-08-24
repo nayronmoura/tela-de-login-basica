@@ -13,3 +13,7 @@ Isso é simples, no site [oficial do flutter](https://docs.flutter.dev/get-start
 
 ## É isso!
 Fico disponível para tirar dúvidas e responder questões sobre o projeto!
+
+
+
+##### obs: A descrição de todos os widgets utilizados estão no login.dart.
